@@ -8,10 +8,10 @@ export default function SkillsPage(props) {
     "JavaScript",
     "HTML5",
     "CSS3",
-    "Bootstrap",
-    "React",
     "jQuery",
+    "React",
     "Node.js",
+    "Express",
     "PostgreSQL"
   ]
   return (

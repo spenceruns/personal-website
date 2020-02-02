@@ -25,19 +25,19 @@ export default class AboutMePage extends React.Component {
           <div className="about-me-right">
             <img src="./images/profile-pic.jpeg" alt="" className="about-me-image" />
             <div className="about-me-icon-container">
-              <a href="https://github.com/spenceruns" className="about-me-icon">
+              <a href="https://github.com/spenceruns" target="_blank" className="about-me-icon">
                 <i className="fab fa-github"></i>
                 <div className="icon-name">Github</div>
               </a>
-              <a href="https://www.linkedin.com/in/spenceruns/" className="about-me-icon">
+              <a href="https://www.linkedin.com/in/spenceruns/" target="_blank" className="about-me-icon">
                 <i className="fab fa-linkedin"></i>
                 <div className="icon-name">Linkedin</div>
               </a>
-              <a href="mailto:spenceruns@gmail.com" className="about-me-icon">
+              <a href="mailto:spenceruns@gmail.com" target="_blank" className="about-me-icon">
                 <i className="fas fa-envelope"></i>
                 <div className="icon-name">Email</div>
               </a>
-              <a href="Spencer_Allen.pdf" className="about-me-icon">
+              <a href="Spencer_Allen.pdf" target="_blank" className="about-me-icon">
                 <i className="fas fa-file-alt"></i>
                 <div className="icon-name">Resume</div>
               </a>

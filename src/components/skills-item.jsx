@@ -16,10 +16,24 @@ export default class SkillItem extends React.Component {
 
   render() {
     const spin = this.state.isClicked && "spin"
+    let icon = null
+    switch(this.props.skill) {
+      case "React":
+        icon = "devicon-react-original";
+        break;
+      case "Express":
+        icon = "devicon-express-original-wordmark";
+        break;
+      case "Node.js":
+        icon = "devicon-nodejs-plain"
+        break;
+      default:
+        icon =`devicons devicons-${this.props.skill.toLowerCase()}`
+    }
     return (
-      <div className="skills-icon-container">
-        <i className={`devicon-${this.props.skill.toLowerCase().replace(".", "")}-plain skills-icon ${spin}`}
-        onClick={this.addSpin}></i>
+      <div className="skills-icon-container"
+        onClick={this.addSpin}>
+        <i className={`${icon} skills-icon ${spin}`}></i>
         <div className="skills-name">{this.props.skill}</div>
       </div>
     )
