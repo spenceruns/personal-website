@@ -1,6 +1,6 @@
 import React from 'react'
 import AOS from 'aos';
-import SkillItem from './skills-item';
+import SkillItem from './skill-item';
 
 export default function SkillsPage(props) {
   AOS.init();

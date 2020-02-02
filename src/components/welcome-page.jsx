@@ -79,7 +79,15 @@ function NoOption(props) {
         onClick={props.toggleList}>
           Skills
           </Link>
-      <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
+      <Link to="tools"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={1000}
+        id="Tools"
+        className={`welcome-page-option tools ${showing}`}
+        onClick={props.toggleList}>
+        Tools
+          </Link>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
   )
@@ -96,15 +104,23 @@ function AboutMeOption(props) {
         About Me
         </li>
       <Link to="skills"
-        id="Skills"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
+        id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
           </Link>
-      <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
+      <Link to="tools"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={1000}
+        id="Tools"
+        className={`welcome-page-option tools ${showing}`}
+        onClick={props.toggleList}>
+        Tools
+          </Link>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
   )
@@ -129,7 +145,15 @@ function SkillsOption(props) {
         onClick={props.toggleList}>
         About Me
         </Link>
-      <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
+      <Link to="tools"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={1000}
+        id="Tools"
+        className={`welcome-page-option tools ${showing}`}
+        onClick={props.toggleList}>
+        Tools
+          </Link>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
   )
@@ -142,19 +166,18 @@ function ToolsOption(props) {
       <li id="Tools" className={`welcome-page-option tools ${showing} selected`} onClick={props.toggleList}>Tools</li>
       <Link to="about-me"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
-        delay={0}
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
         About Me
         </Link>
       <Link to="skills"
-        id="Skills"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
+        id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
@@ -171,24 +194,31 @@ function ApplicationsOption(props) {
       <li id="Applications" className={`welcome-page-option applications ${showing} selected`} onClick={props.toggleList}>Applications</li>
       <Link to="about-me"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
-        delay={0}
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
         About Me
         </Link>
       <Link to="skills"
-        id="Skills"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
+        id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
           </Link>
-      <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
+      <Link to="tools"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={1000}
+        id="Tools"
+        className={`welcome-page-option tools ${showing}`}
+        onClick={props.toggleList}>
+        Tools
+          </Link>
     </>
   )
 }
