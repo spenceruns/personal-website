@@ -45,11 +45,11 @@ export default class WelcomePage extends React.Component {
     const showing = this.state.showList && "options-show"
     return (
       <div className="welcome-page-container">
-        <div className="welcome-message">{"<div>Hello,  My name is Spencer! Checkout out my"}&nbsp;
+        <div className="welcome-message"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span>Hello,  My name is Spencer! Checkout out my&nbsp;
           <ul className="welcome-page-options">
             { this.whichView() }
           </ul>
-          {"</div>"}
+          <span className="tags">{"</"}</span>div<span className="tags">{">"}</span>
         </div>
      </div>
    )
@@ -64,18 +64,18 @@ function NoOption(props) {
       <Link to="about-me"
       spy={true}
       smooth={"easeOutCubic"}
-      duration={500}
+      duration={1000}
       id="About Me"
       className={`welcome-page-option about-me ${showing}`}
       onClick={props.toggleList}>
         About Me
         </Link>
       <Link to="skills"
+        id="skills"
         spy={true}
-        smooth={"easeOutCubic"}
-        duration={500}
-        id="Skills"
-        className={`welcome-page-option about-me ${showing}`}
+        smooth={true}
+        duration={1000}
+        className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
           Skills
           </Link>
@@ -96,10 +96,10 @@ function AboutMeOption(props) {
         About Me
         </li>
       <Link to="skills"
+        id="skills"
         spy={true}
-        smooth={"easeOutCubic"}
-        duration={500}
-        id="Skills"
+        smooth={true}
+        duration={1000}
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
         Skills
@@ -151,10 +151,10 @@ function ToolsOption(props) {
         About Me
         </Link>
       <Link to="skills"
+        id="skills"
         spy={true}
-        smooth={"easeOutCubic"}
-        duration={500}
-        id="Skills"
+        smooth={true}
+        duration={1000}
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
         Skills
@@ -180,10 +180,10 @@ function ApplicationsOption(props) {
         About Me
         </Link>
       <Link to="skills"
+        id="skills"
         spy={true}
-        smooth={"easeOutCubic"}
-        duration={500}
-        id="Skills"
+        smooth={true}
+        duration={1000}
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
         Skills
