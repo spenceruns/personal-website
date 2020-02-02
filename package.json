@@ -4,6 +4,8 @@
   "description": "Files for my personal website",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack -w --mode=development",
+    "dev:client": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
