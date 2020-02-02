@@ -71,10 +71,10 @@ function NoOption(props) {
         About Me
         </Link>
       <Link to="skills"
-        id="skills"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
+        id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
           Skills
@@ -96,11 +96,11 @@ function AboutMeOption(props) {
         About Me
         </li>
       <Link to="skills"
-        id="skills"
+        id="Skills"
         spy={true}
         smooth={true}
         duration={1000}
-        className={`welcome-page-option about-me ${showing}`}
+        className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
           </Link>
@@ -114,16 +114,16 @@ function SkillsOption(props) {
   const showing = props.showList && "options-show"
   return (
     <>
-      <li id="Skills"
-      className={`welcome-page-option skills ${showing} selected`}
-      onClick={props.toggleList}>
+      <li
+        id="Skills"
+        className={`welcome-page-option skills ${showing} selected`}
+        onClick={props.toggleList}>
         Skills
         </li>
       <Link to="about-me"
         spy={true}
-        smooth={true}
+        smooth={"easeOutCubic"}
         duration={1000}
-        delay={0}
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
@@ -151,11 +151,11 @@ function ToolsOption(props) {
         About Me
         </Link>
       <Link to="skills"
-        id="skills"
+        id="Skills"
         spy={true}
         smooth={true}
         duration={1000}
-        className={`welcome-page-option about-me ${showing}`}
+        className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
           </Link>
@@ -180,11 +180,11 @@ function ApplicationsOption(props) {
         About Me
         </Link>
       <Link to="skills"
-        id="skills"
+        id="Skills"
         spy={true}
         smooth={true}
         duration={1000}
-        className={`welcome-page-option about-me ${showing}`}
+        className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
           </Link>
