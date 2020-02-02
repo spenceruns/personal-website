@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+  Link,
+  animateScroll as scroll
+} from 'react-scroll';
 
 export default class WelcomePage extends React.Component {
   constructor(props) {
@@ -57,8 +61,24 @@ function NoOption(props) {
   return (
     <>
       <li className={`welcome-page-option ${showing} selected`} onClick={props.toggleList} style={{ color: '#393e46'}}>Awesome Stuff!</li>
-      <li id="About Me" className={`welcome-page-option about-me ${showing}`} onClick={props.toggleList}>About Me</li>
-      <li id="Skills" className={`welcome-page-option skills ${showing} `} onClick={props.toggleList}>Skills</li>
+      <Link to="about-me"
+      spy={true}
+      smooth={"easeOutCubic"}
+      duration={500}
+      id="About Me"
+      className={`welcome-page-option about-me ${showing}`}
+      onClick={props.toggleList}>
+        About Me
+        </Link>
+      <Link to="skills"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={500}
+        id="Skills"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+          Skills
+          </Link>
       <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
@@ -69,8 +89,21 @@ function AboutMeOption(props) {
   const showing = props.showList && "options-show"
   return (
     <>
-      <li id="About Me" className={`welcome-page-option about-me ${showing} selected`} onClick={props.toggleList}>About Me</li>
-      <li id="Skills" className={`welcome-page-option skills ${showing} `} onClick={props.toggleList}>Skills</li>
+      <li
+        id="About Me"
+        className={`welcome-page-option about-me ${showing} selected`}
+        onClick={props.toggleList}>
+        About Me
+        </li>
+      <Link to="skills"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={500}
+        id="Skills"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        Skills
+          </Link>
       <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
@@ -81,8 +114,21 @@ function SkillsOption(props) {
   const showing = props.showList && "options-show"
   return (
     <>
-      <li id="Skills" className={`welcome-page-option skills ${showing} selected`} onClick={props.toggleList}>Skills</li>
-      <li id="About Me" className={`welcome-page-option about-me ${showing} `} onClick={props.toggleList}>About Me</li>
+      <li id="Skills"
+      className={`welcome-page-option skills ${showing} selected`}
+      onClick={props.toggleList}>
+        Skills
+        </li>
+      <Link to="about-me"
+        spy={true}
+        smooth={true}
+        duration={1000}
+        delay={0}
+        id="About Me"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        About Me
+        </Link>
       <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
@@ -94,8 +140,25 @@ function ToolsOption(props) {
   return (
     <>
       <li id="Tools" className={`welcome-page-option tools ${showing} selected`} onClick={props.toggleList}>Tools</li>
-      <li id="About Me" className={`welcome-page-option about-me ${showing} `} onClick={props.toggleList}>About Me</li>
-      <li id="Skills" className={`welcome-page-option skills ${showing} `} onClick={props.toggleList}>Skills</li>
+      <Link to="about-me"
+        spy={true}
+        smooth={true}
+        duration={1000}
+        delay={0}
+        id="About Me"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        About Me
+        </Link>
+      <Link to="skills"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={500}
+        id="Skills"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        Skills
+          </Link>
       <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
     </>
   )
@@ -106,8 +169,25 @@ function ApplicationsOption(props) {
   return (
     <>
       <li id="Applications" className={`welcome-page-option applications ${showing} selected`} onClick={props.toggleList}>Applications</li>
-      <li id="About Me" className={`welcome-page-option about-me ${showing} `} onClick={props.toggleList}>About Me</li>
-      <li id="Skills" className={`welcome-page-option skills ${showing} `} onClick={props.toggleList}>Skills</li>
+      <Link to="about-me"
+        spy={true}
+        smooth={true}
+        duration={1000}
+        delay={0}
+        id="About Me"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        About Me
+        </Link>
+      <Link to="skills"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={500}
+        id="Skills"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        Skills
+          </Link>
       <li id="Tools" className={`welcome-page-option tools ${showing} `} onClick={props.toggleList}>Tools</li>
     </>
   )

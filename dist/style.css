@@ -18,7 +18,6 @@ body {
   width: 100%;
   background: transparent;
   position: relative;
-  z-index: -1;
 }
 
 /* .navbar {
@@ -54,16 +53,11 @@ body {
   display: inline;
 } */
 
-.welcome-page-container {
+.welcome-page-container,
+.skills-page-container {
   position: fixed;
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: nowrap row;
-  font-size: 2.5rem;
-  font-weight: bold;
 }
 
 .welcome-page-container {
@@ -73,6 +67,7 @@ body {
   flex-flow: row nowrap;
   font-size: 2.5rem;
   font-weight: bold;
+  z-index: 1;
 }
 
 .welcome-message {
@@ -89,6 +84,8 @@ body {
 
 .welcome-page-option {
   visibility: hidden;
+  widows: 311px;
+  display: block;
 }
 
 .options-show,
@@ -96,11 +93,17 @@ body {
   visibility: visible;
   cursor: pointer;
   width: 311px;
+  position: relative;
 }
 
-.selected {
-  border-bottom: 2px solid #EEEEEE;
-  margin-bottom: -2px;
+.selected::after {
+  content: '';
+  height: 2px;
+  width: 311px;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .about-me {
@@ -128,7 +131,7 @@ body {
 
 .about-me-page-container {
   position: relative;
-  z-index: 1;
+  z-index: 4;
   height: 100vh;
   width: 100%;
   background-color: #393e46;
@@ -229,6 +232,16 @@ body {
 
 .about-me-message {
   margin: 10px 0;
+}
+
+.skills-page-container {
+  background-color: #222831;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 @keyframes fadein {

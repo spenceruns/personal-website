@@ -15,7 +15,7 @@ export default class AboutMePage extends React.Component {
 
   render() {
     return (
-      <div className="about-me-page-container">
+      <div className="about-me-page-container" id="about-me">
         <div className="about-me-content">
           <div className="about-me-left">
             <div className="about-me-title">About Me</div>

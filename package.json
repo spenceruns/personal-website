@@ -4,7 +4,7 @@
   "description": "Files for my personal website",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack -w --mode=development",
+    "dev": "webpack -w --mode=development",
     "dev:client": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/spenceruns/personal-website#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-scroll": "^1.7.16"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
