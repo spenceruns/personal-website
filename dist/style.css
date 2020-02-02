@@ -104,7 +104,8 @@ body {
   color: #e84545;
 }
 
-.about-me-page-container {
+.about-me-page-container,
+.tools-page-container {
   position: relative;
   z-index: 4;
   height: 100vh;
@@ -136,7 +137,8 @@ body {
 }
 
 .about-me-title,
-.skills-title {
+.skills-title,
+.tools-title {
   font-size: 3rem;
   text-align: center;
 }
@@ -221,7 +223,8 @@ body {
   z-index: 2;
 }
 
-.skills-page-icons-container {
+.skills-page-icons-container,
+.tools-page-icons-container {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
@@ -230,19 +233,36 @@ body {
   width: 60%;
 }
 
-.skills-icon-container {
-  width: 25%;
+.skills-icon-container,
+.tool-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+
+.skills-icon-container {
+  width: 25%;
   cursor: pointer;
+}
+
+.tool-icon-container {
+  width: 14%;
+  height: 20%;
+  margin: 0 35px;
+  border-radius: 10px;
+  background-color: #12d3cf;
 }
 
 .skills-icon {
   font-size: 8rem;
   text-align: center;
   color: #b0f4e6;
+}
+
+.tool-icon {
+  font-size: 6rem;
+  text-align: center;
 }
 
 .spin {
@@ -262,6 +282,13 @@ body {
 
 .skills-icon-container:hover .skills-name {
   color: #b0f4e6;
+}
+
+.tools-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 @keyframes fadein {
