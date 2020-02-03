@@ -9,7 +9,6 @@ export default function App(props) {
   return (
     <>
       <WelcomePage />
-      <SkillsPage />
       <div className="break"></div>
       <AboutMePage />
       <div className="break" id="skills"></div>

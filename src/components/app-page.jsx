@@ -12,25 +12,28 @@ export default class AppPage extends React.Component {
           name: "Memory Match",
           description: "A lo-fi hip-hop music-themed memory match game that dynamically creates a song as you play.",
           logo: "./images/mm-logo.png",
-          url: "www.google.com",
+          preview: "./images/mm-preview.gif",
+          url: "https://lo-fi.spenceruns.com/",
           github: "https://github.com/spenceruns/memory-match",
           figma: null
         },
         {
-          id: 3,
+          id: 2,
           name: "Wicked Vinyl",
           description: "A full stack mock e-commerce site that showcases a personal selection of vinyl, turntables and music accessories.",
           logo: "./images/wv-logo.png",
-          url: "www.google.com",
+          preview: "./images/wv-preview.gif",
+          url: "https://wicked-vinyl.spenceruns.com/",
           github: "https://github.com/spenceruns/wicked-vinyl",
           figma: null
         },
         {
-          id: 2,
+          id: 3,
           name: "ShadowRealmer.com",
           description: "A full stack web app for trading card enthusiasts to find store events and meet up with other users to play together.",
           logo: "./images/sr-logo.png",
-          url: "shadowrealmer.com",
+          preview: "./images/sr-preview.gif",
+          url: "https://shadowrealmer.com/",
           github: "https://github.com/AndrewLo42/shadow-realmer",
           figma: "https://www.figma.com/file/E7zFjWjORH7H9go1E1wFjX/ShadowRealmer.com?node-id=0%3A1"
         }
