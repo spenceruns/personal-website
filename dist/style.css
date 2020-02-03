@@ -28,7 +28,8 @@ body {
 }
 
 .welcome-page-container,
-.skills-page-container {
+.skills-page-container,
+.app-page-container {
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -58,9 +59,14 @@ body {
 }
 
 .welcome-page-option {
+  margin: 10px 0;
   visibility: hidden;
-  widows: 311px;
+  width: 311px;
   display: block;
+}
+
+.selected {
+  margin: 0;
 }
 
 .options-show,
@@ -138,7 +144,8 @@ body {
 
 .about-me-title,
 .skills-title,
-.tools-title {
+.tools-title,
+.apps-title {
   font-size: 3rem;
   text-align: center;
 }
@@ -212,7 +219,8 @@ body {
   margin: 10px 0;
 }
 
-.skills-page-container {
+.skills-page-container,
+.app-page-container {
   background-color: #222831;
   top: 0;
   left: 0;
@@ -220,7 +228,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+
+.skills-page-container {
   z-index: 2;
+}
+
+.app-page-container {
+  z-index: 3;
 }
 
 .skills-page-icons-container,
@@ -289,6 +304,80 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+
+.apps-container {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app {
+  height: 90%;
+  width: 34%;
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #393e46;
+  transition:
+    width 275ms ease-in-out,
+    font-size 150ms ease-in-out,
+    background-color 150ms ease-in-out;
+}
+
+.app:hover {
+  background-color: #393e46;
+}
+
+.app-logo {
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  border: 3px solid #12d3cf;
+  position: fixed;
+  top: 35%;
+  transition: top 275ms ease-in-out;
+}
+
+.app-name {
+  position: relative;
+  bottom: 12%;
+  transition: opacity 275ms ease-in-out;
+}
+
+.app-description {
+  white-space: normal;
+  font-size: 1.5rem;
+  color: #b0f4e6;
+  text-align: center;
+  width: 22%;
+  position: fixed;
+  top: 56%;
+  overflow: hidden;
+  transition: opacity 275ms ease-in-out;
+}
+
+.move-logo {
+  top: 53%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.opened {
+  width: 100vw;
+}
+
+.squished {
+  width: 15vh;
 }
 
 @keyframes fadein {

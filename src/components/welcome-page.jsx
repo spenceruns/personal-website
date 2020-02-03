@@ -45,7 +45,7 @@ export default class WelcomePage extends React.Component {
     const showing = this.state.showList && "options-show"
     return (
       <div className="welcome-page-container">
-        <div className="welcome-message"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span>Hello,  My name is Spencer! Checkout out my&nbsp;
+        <div className="welcome-message"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span>Hi,  My name is Spencer! Check out out my&nbsp;
           <ul className="welcome-page-options">
             { this.whichView() }
           </ul>
@@ -82,13 +82,21 @@ function NoOption(props) {
       <Link to="tools"
         spy={true}
         smooth={"easeOutCubic"}
-        duration={1000}
+        duration={1500}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
         Tools
           </Link>
-      <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
+      <Link to="applications"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={2000}
+        id="Applications"
+        className={`welcome-page-option applications ${showing}`}
+        onClick={props.toggleList}>
+        Applications
+          </Link>
     </>
   )
 }
@@ -115,13 +123,21 @@ function AboutMeOption(props) {
       <Link to="tools"
         spy={true}
         smooth={"easeOutCubic"}
-        duration={1000}
+        duration={1500}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
         Tools
           </Link>
-      <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
+      <Link to="applications"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={2000}
+        id="Applications"
+        className={`welcome-page-option applications ${showing}`}
+        onClick={props.toggleList}>
+        Applications
+          </Link>
     </>
   )
 }
@@ -148,13 +164,21 @@ function SkillsOption(props) {
       <Link to="tools"
         spy={true}
         smooth={"easeOutCubic"}
-        duration={1000}
+        duration={1500}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
         Tools
           </Link>
-      <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
+      <Link to="applications"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={2000}
+        id="Applications"
+        className={`welcome-page-option applications ${showing}`}
+        onClick={props.toggleList}>
+        Applications
+          </Link>
     </>
   )
 }
@@ -176,13 +200,21 @@ function ToolsOption(props) {
       <Link to="skills"
         spy={true}
         smooth={"easeOutCubic"}
-        duration={1000}
+        duration={1500}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
         Skills
           </Link>
-      <li id="Applications" className={`welcome-page-option applications ${showing} `} onClick={props.toggleList}>Applications</li>
+      <Link to="applications"
+        spy={true}
+        smooth={"easeOutCubic"}
+        duration={2000}
+        id="Applications"
+        className={`welcome-page-option applications ${showing}`}
+        onClick={props.toggleList}>
+        Applications
+          </Link>
     </>
   )
 }
@@ -204,7 +236,7 @@ function ApplicationsOption(props) {
       <Link to="skills"
         spy={true}
         smooth={"easeOutCubic"}
-        duration={1000}
+        duration={1500}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
@@ -213,7 +245,7 @@ function ApplicationsOption(props) {
       <Link to="tools"
         spy={true}
         smooth={"easeOutCubic"}
-        duration={1000}
+        duration={2000}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
