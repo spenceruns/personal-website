@@ -6,8 +6,6 @@ import ToolsPage from './tools-page'
 import AppPage from './app-page'
 
 export default function App(props) {
-  const laoding = document.readyState
-  console.log(laoding)
   return (
     <>
       <WelcomePage />
