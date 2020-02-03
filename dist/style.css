@@ -317,7 +317,6 @@ body {
 .app {
   height: 90%;
   width: 34%;
-  font-size: 2rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -328,8 +327,7 @@ body {
   border: 1px solid #393e46;
   transition:
     width 275ms ease-in-out,
-    font-size 150ms ease-in-out,
-    background-color 150ms ease-in-out;
+    background-color 100ms ease-in-out;
 }
 
 .app:hover {
@@ -343,28 +341,103 @@ body {
   border: 3px solid #12d3cf;
   position: fixed;
   top: 35%;
-  transition: top 275ms ease-in-out;
+  transition:
+    top 275ms ease-in-out;
 }
 
 .app-name {
+  font-size: 2rem;
+  position: fixed;
+  top: 44%;
+  transition:
+    top 275ms ease-in-out,
+    font-size 275ms ease-in-out,
+    opacity 275ms ease-in-out;
+}
+
+.app-preview {
+  height: 45%;
   position: relative;
+  top: 25%;
+  right: 20%;
+  transition:
+    opacity 275ms ease-in-out;
+}
+
+.desc-right {
+  position: relative;
+  left: 0;
   bottom: 12%;
-  transition: opacity 275ms ease-in-out;
+  transition:
+    left 275ms ease-in-out,
+    bottom 275ms ease-in-out;
 }
 
 .app-description {
   white-space: normal;
+  margin: 1rem;
   font-size: 1.5rem;
   color: #b0f4e6;
   text-align: center;
-  width: 22%;
-  position: fixed;
-  top: 56%;
+  width: 28vh;
   overflow: hidden;
-  transition: opacity 275ms ease-in-out;
+  transition:
+    width 275ms ease-in,
+    font-size 275ms ease-in-out,
+    opacity 275ms ease-in-out;
 }
 
-.move-logo {
+.app-links {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  transition:
+    display 275ms ease-in-out,
+    font-size 275ms ease-in-out,
+    opacity 275ms ease-in-out;
+}
+
+.app-link {
+  text-decoration: none;
+  margin: 2%;
+  color: #EEEEEE;
+  background-color: #12d3cf;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.app-link:hover {
+  background-color: #EEEEEE;
+  color: #393e46;
+}
+
+.opened {
+  width: 100vw;
+  cursor: initial;
+}
+
+.move-logo-opened {
+  top: 30%;
+}
+
+.move-name-opened {
+  top: 38%;
+  font-size: 3rem;
+}
+
+.move-desc-opened {
+  bottom: 23%;
+  left: 26%;
+  width: 38vh;
+  font-size: 1.75rem;
+}
+
+.squished {
+  width: 15vh;
+}
+
+.move-logo-down {
   top: 53%;
 }
 
@@ -372,12 +445,9 @@ body {
   opacity: 0;
 }
 
-.opened {
-  width: 100vw;
-}
-
-.squished {
-  width: 15vh;
+.hide-links {
+  display: none;
+  opacity: 0;
 }
 
 @keyframes fadein {

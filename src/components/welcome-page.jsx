@@ -63,7 +63,7 @@ function NoOption(props) {
       <li className={`welcome-page-option ${showing} selected`} onClick={props.toggleList} style={{ color: '#393e46'}}>Awesome Stuff!</li>
       <Link to="about-me"
       spy={true}
-      smooth={"easeOutCubic"}
+      smooth={true}
       duration={1000}
       id="About Me"
       className={`welcome-page-option about-me ${showing}`}
@@ -72,7 +72,7 @@ function NoOption(props) {
         </Link>
       <Link to="skills"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1000}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
@@ -81,7 +81,7 @@ function NoOption(props) {
           </Link>
       <Link to="tools"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1500}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
@@ -90,7 +90,7 @@ function NoOption(props) {
           </Link>
       <Link to="applications"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={2000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
@@ -113,7 +113,7 @@ function AboutMeOption(props) {
         </li>
       <Link to="skills"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1000}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
@@ -122,7 +122,7 @@ function AboutMeOption(props) {
           </Link>
       <Link to="tools"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1500}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
@@ -131,7 +131,7 @@ function AboutMeOption(props) {
           </Link>
       <Link to="applications"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={2000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
@@ -154,7 +154,7 @@ function SkillsOption(props) {
         </li>
       <Link to="about-me"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1000}
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
@@ -163,7 +163,7 @@ function SkillsOption(props) {
         </Link>
       <Link to="tools"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1500}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
@@ -172,7 +172,7 @@ function SkillsOption(props) {
           </Link>
       <Link to="applications"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={2000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
@@ -190,7 +190,7 @@ function ToolsOption(props) {
       <li id="Tools" className={`welcome-page-option tools ${showing} selected`} onClick={props.toggleList}>Tools</li>
       <Link to="about-me"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1000}
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
@@ -199,7 +199,7 @@ function ToolsOption(props) {
         </Link>
       <Link to="skills"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1500}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
@@ -208,7 +208,7 @@ function ToolsOption(props) {
           </Link>
       <Link to="applications"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={2000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
@@ -226,7 +226,7 @@ function ApplicationsOption(props) {
       <li id="Applications" className={`welcome-page-option applications ${showing} selected`} onClick={props.toggleList}>Applications</li>
       <Link to="about-me"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1000}
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
@@ -235,7 +235,7 @@ function ApplicationsOption(props) {
         </Link>
       <Link to="skills"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={1500}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
@@ -244,7 +244,7 @@ function ApplicationsOption(props) {
           </Link>
       <Link to="tools"
         spy={true}
-        smooth={"easeOutCubic"}
+        smooth={true}
         duration={2000}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
