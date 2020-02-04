@@ -16,7 +16,7 @@ export default class WelcomePage extends React.Component {
     this.whichView = this.whichView.bind(this)
   }
 
-  toggleList(event) {
+  toggleList() {
     this.setState({showList: !this.state.showList}, () => this.changeOption())
   }
 

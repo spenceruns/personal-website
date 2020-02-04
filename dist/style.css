@@ -153,7 +153,7 @@ body {
 .about-me-image {
   height: auto;
   width: 80%;
-  margin: 10px auto;
+  margin: 5% auto;
 }
 
 .about-me-icon-container {
@@ -175,7 +175,7 @@ body {
 }
 
 .icon-name {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   text-align: center;
   width: 100%;
   margin-top: 15px;
@@ -216,7 +216,8 @@ body {
 }
 
 .about-me-message {
-  margin: 10px 0;
+  font-size: 0.9rem;
+  margin: 2% 0;
 }
 
 .skills-page-container,
@@ -289,6 +290,11 @@ body {
   text-align: center;
   color: #EEEEEE;
   margin-top: 15px;
+}
+
+.tool-name {
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .skills-icon-container:hover .skills-icon {
@@ -388,6 +394,7 @@ body {
 }
 
 .app-links {
+  margin-left: 1rem;
   display: flex;
   flex-flow: nowrap row;
   justify-content: center;
@@ -405,6 +412,7 @@ body {
   background-color: #12d3cf;
   border-radius: 10px;
   padding: 10px;
+  font-size: 1rem;
 }
 
 .app-link:hover {
@@ -448,6 +456,524 @@ body {
 .hide-links {
   display: none;
   opacity: 0;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .welcome-page-container {
+    font-size: 1.5rem;
+  }
+
+  .welcome-page-option {
+    width: 250px;
+  }
+
+  .options-show,
+  .selected {
+    width: 250px;
+  }
+
+  .selected::after {
+    width: 250px;
+  }
+
+  .about-me-title,
+  .skills-title,
+  .tools-title,
+  .apps-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-me-icon {
+    font-size: 1.5rem;
+  }
+
+  .icon-name {
+    font-size: 0.5rem;
+  }
+
+  .about-me-message {
+    font-size: 0.75rem;
+  }
+
+  .tool-icon {
+    font-size: 4rem;
+  }
+
+  .skills-name {
+    font-size: 1.5rem;
+  }
+
+  .tool-icon-container {
+    width: 19%;
+    height: 17%;
+    margin: 0 4px;
+  }
+
+  .app-logo {
+    height: 6vh;
+    width: 6vh;
+  }
+
+  .app-name {
+    font-size: 1.5rem;
+  }
+
+  .app-preview {
+    height: 35%;
+  }
+
+  .app-description {
+    margin: 1rem;
+    font-size: 1.25rem;
+    width: 24vh;
+  }
+
+  .move-desc-opened {
+    bottom: 12%;
+    left: 26%;
+    width: 30vh;
+    font-size: 1.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .welcome-page-container {
+    font-size: 1.25rem;
+  }
+
+  .welcome-page-option {
+    width: 170px;
+  }
+
+  .options-show,
+  .selected {
+    width: 170px;
+  }
+
+  .selected::after {
+    width: 170px;
+  }
+
+  .about-me-icon {
+    font-size: 1.2rem;
+  }
+
+  .icon-name {
+    font-size: 0.45rem;
+  }
+
+  .about-me-message {
+    font-size: 0.5rem;
+  }
+
+  .skills-page-icons-container,
+  .tools-page-icons-container {
+    width: 75%;
+  }
+
+  .tool-icon {
+    font-size: 4rem;
+  }
+
+  .tool-name {
+    font-size: 0.7rem;
+  }
+
+  .tool-icon-container {
+    width: 19%;
+    height: 17%;
+    margin: 0 4px;
+  }
+
+  .app-logo {
+    height: 6vh;
+    width: 6vh;
+  }
+
+  .app-name {
+    font-size: 1.25rem;
+  }
+
+  .app-preview {
+    height: 35%;
+  }
+
+  .app-description {
+    margin: 1rem;
+    font-size: 1rem;
+    width: 24vh;
+  }
+
+  .move-desc-opened {
+    bottom: 12%;
+    left: 26%;
+    width: 30vh;
+    font-size: 1.25rem;
+  }
+
+  .app-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .welcome-page-container {
+    font-size: 1rem;
+  }
+
+  .welcome-page-option {
+    width: 130px;
+  }
+
+  .options-show,
+  .selected {
+    width: 130px;
+  }
+
+  .selected::after {
+    width: 130px;
+  }
+
+  .about-me-icon {
+    font-size: 0.9rem;
+  }
+
+  .icon-name {
+    font-size: 8px;
+  }
+
+  .about-me-left {
+    width: 75%;
+  }
+
+  .about-me-message {
+    font-size: 13px;
+  }
+
+  .about-me-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .tool-icon {
+    font-size: 5rem;
+  }
+
+  .skills-page-icons-container,
+  .tools-page-icons-container {
+    width: 85%;
+  }
+
+  .tool-name {
+    font-size: 1rem;
+  }
+
+  .apps-container {
+    flex-flow: column;
+  }
+
+  .app {
+    width: 100%;
+    transition: height 275ms ease-in-out;
+  }
+
+  .app:hover {
+    background-color: #222831;
+  }
+
+  .app-logo {
+    height: 7vh;
+    width: 7vh;
+    position: relative;
+    right: 35%;
+    top: 50%;
+    transition:
+      top 275ms ease-in-out;
+  }
+
+  .app-name {
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+  }
+
+  .app-preview {
+    height: 40%;
+    top: 10%;
+  }
+
+  .desc-right {
+    position: relative;
+    left: 0;
+    bottom: 27%;
+  }
+
+  .app-description {
+    width: 20vh;
+  }
+
+  .move-desc-opened {
+    bottom: 29%;
+    left: 26%;
+    width: 30vh;
+    font-size: 1.25rem;
+  }
+
+  .app-link {
+    font-size: 0.8rem;
+  }
+
+  .opened {
+    height: 100%;
+  }
+
+  .move-logo-opened {
+    top: 5%;
+  }
+
+  .squished {
+    height: 25%;
+  }
+
+  .move-logo-down {
+    top: 90%;
+  }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .about-me-title,
+  .skills-title,
+  .tools-title,
+  .apps-title {
+    font-size: 1.5rem;
+  }
+
+  .about-me-message {
+    font-size: 9px;
+  }
+
+  .skills-icon {
+    font-size: 6rem;
+  }
+
+  .tool-icon {
+    font-size: 3rem;
+  }
+
+  .skills-name {
+    font-size: 1rem;
+  }
+
+  .tool-name {
+    font-size: 0.7rem;
+  }
+
+  .tool-icon-container {
+    width: 12%;
+    height: 25%;
+    margin: 3px 35px;
+  }
+
+  .apps-container {
+    flex-flow: row nowrap;
+  }
+
+  .app {
+    transition: width 275ms ease-in-out;
+  }
+
+  .app-logo {
+    height: 10vh;
+    width: 10vh;
+    position: relative;
+    right: 0;
+    top: 22%;
+    transition:
+      top 275ms ease-in-out;
+  }
+
+  .app-name {
+    font-size: 1.25rem;
+    position: relative;
+    top: 25%;
+  }
+
+  .app-preview {
+    height: 56%;
+    top: 30%;
+  }
+
+  .desc-right {
+    position: relative;
+    left: 0;
+    bottom: 27%;
+  }
+
+  .app-description {
+    width: 42vh;
+    font-size: 0.9rem;
+  }
+
+  .move-desc-opened {
+    bottom: 34%;
+    left: 26%;
+    width: 52vh;
+  }
+
+  .app-link {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .opened {
+    height: 90%;
+    width: 100vw;
+  }
+
+  .move-logo-opened {
+    top: 28%;
+  }
+
+  .squished {
+    height: 90%;
+    width: 15vh;
+  }
+
+  .move-logo-down {
+    top: 58%;
+  }
+}
+
+/* Small devices (Mobile devices, 576px and up) */
+@media (max-width: 576px) {
+  .welcome-page-container {
+    font-size: 1rem;
+    flex-flow: column;
+  }
+
+  .welcome-page-option {
+    width: 130px;
+  }
+
+  .options-show,
+  .selected {
+    width: 130px;
+  }
+
+  .selected::after {
+    width: 130px;
+  }
+
+  .about-me-icon {
+    font-size: 0.9rem;
+  }
+
+  .icon-name {
+    font-size: 8px;
+  }
+
+  .about-me-left {
+    width: 75%;
+  }
+
+  .about-me-message {
+    font-size: 13px;
+  }
+
+  .about-me-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .tool-icon {
+    font-size: 5rem;
+  }
+
+  .skills-page-icons-container,
+  .tools-page-icons-container {
+    width: 85%;
+  }
+
+  .tool-name {
+    font-size: 1rem;
+  }
+
+  .apps-container {
+    flex-flow: column;
+  }
+
+  .app {
+    width: 100%;
+    transition:
+      height 275ms ease-in-out;
+  }
+
+  .app-logo {
+    height: 7vh;
+    width: 7vh;
+    position: relative;
+    right: 35%;
+    top: 50%;
+    transition:
+      top 275ms ease-in-out;
+  }
+
+  .app-name {
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+  }
+
+  .app-preview {
+    height: 40%;
+    top: 10%;
+  }
+
+  .desc-right {
+    position: relative;
+    left: 0;
+    bottom: 27%;
+  }
+
+  .app-description {
+    width: 20vh;
+  }
+
+  .move-desc-opened {
+    bottom: 29%;
+    left: 26%;
+    width: 30vh;
+    font-size: 1.25rem;
+  }
+
+  .app-link {
+    font-size: 0.8rem;
+  }
+
+  .opened {
+    height: 100%;
+  }
+
+  .move-logo-opened {
+    top: 5%;
+  }
+
+  .squished {
+    height: 25%;
+  }
+
+  .move-logo-down {
+    top: 90%;
+  }
 }
 
 @keyframes fadein {
