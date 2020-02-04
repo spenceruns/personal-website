@@ -4,7 +4,7 @@ export default function ToolItem(props) {
   let icon = null
   switch(props.tool) {
     case "AWS":
-      icon = "fab fa-aws";
+      icon = "devicon-amazonwebservices-original";
       break;
     case "Babel":
       icon = "devicon-babel-plain";
@@ -22,7 +22,7 @@ export default function ToolItem(props) {
       icon = "fab fa-font-awesome"
       break
     case "Photoshop":
-      icon = "devicon-photoshop-plain"
+      icon = "devicon-photoshop-line"
       break
     case "Slack":
       icon = "devicon-slack-plain"
