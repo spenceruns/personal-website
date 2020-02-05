@@ -540,16 +540,16 @@ body {
   }
 
   .welcome-page-option {
-    width: 170px;
+    width: 200px;
   }
 
   .options-show,
   .selected {
-    width: 170px;
+    width: 200px;
   }
 
   .selected::after {
-    width: 170px;
+    width: 200px;
   }
 
   .about-me-icon {
@@ -621,16 +621,16 @@ body {
   }
 
   .welcome-page-option {
-    width: 150px;
+    width: 170px;
   }
 
   .options-show,
   .selected {
-    width: 150px;
+    width: 170px;
   }
 
   .selected::after {
-    width: 150px;
+    width: 170px;
   }
 
   .about-me-icon {
@@ -641,17 +641,34 @@ body {
     font-size: 8px;
   }
 
+  .about-me-content {
+    flex-flow: column-reverse;
+  }
+
   .about-me-left {
-    width: 75%;
+    width: 90%;
   }
 
   .about-me-message {
-    font-size: 13px;
+    font-size: 14px;
+  }
+
+  .about-me-right {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
   }
 
   .about-me-image {
     height: auto;
     width: 100%;
+    margin: 5%;
+  }
+
+  .about-me-icon-container {
+    flex-flow: column;
+    height: 90%;
   }
 
   .tool-icon {
@@ -745,6 +762,10 @@ body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
+  .about-me-content {
+    flex-flow: row;
+  }
+
   .about-me-title,
   .skills-title,
   .tools-title,
@@ -754,6 +775,15 @@ body {
 
   .about-me-message {
     font-size: 9px;
+  }
+
+  .about-me-left {
+    width: 60%;
+  }
+
+  .about-me-right {
+    width: 30%;
+    margin-left: 5%;
   }
 
   .skills-icon {
@@ -771,6 +801,7 @@ body {
   .tool-name {
     font-size: 0.7rem;
   }
+
 
   .tool-icon-container {
     width: 12%;
@@ -850,121 +881,108 @@ body {
 
 /* Small devices (Mobile devices, 576px and up) */
 @media (max-width: 576px) {
-  .welcome-page-container {
-    font-size: 17px;
-  }
-
-  .welcome-message {
-    flex-flow: column;
-  }
-
   .welcome-tag {
-    display: flex;
-    flex-flow: row nowrap;
+    display: none;
   }
 
   .welcome-page-options {
-    margin: 0;
-    padding: 0;
-    height: 27vh;
+    align-self: center;
   }
 
   .welcome-page-option {
-    width: 130px;
+    width: 150px;
   }
 
   .options-show,
   .selected {
-    width: 130px;
+    width: 150px;
   }
 
   .selected::after {
-    width: 130px;
-  }
-
-  .about-me-icon {
-    font-size: 0.9rem;
-  }
-
-  .icon-name {
-    font-size: 8px;
+    width: 150px;
   }
 
   .about-me-left {
-    width: 75%;
+    width: 96%;
+  }
+
+  .about-me-title,
+  .skills-title,
+  .tools-title,
+  .apps-title {
+    font-size: 1.5rem;
   }
 
   .about-me-message {
-    font-size: 13px;
+    font-size: 10px;
   }
 
-  .about-me-image {
-    height: auto;
-    width: 100%;
+
+  .skills-page-icons-container {
+    widows: 87%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .skills-icon {
+    font-size: 4rem;
   }
 
   .tool-icon {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
-  .skills-page-icons-container,
   .tools-page-icons-container {
-    width: 85%;
+    width: 95%;
   }
 
   .tool-name {
-    font-size: 1rem;
-  }
-
-  .apps-container {
-    flex-flow: column;
-  }
-
-  .app {
-    width: 100%;
-    transition:
-      height 275ms ease-in-out;
+    font-size: 0.6rem;
   }
 
   .app-logo {
-    height: 7vh;
-    width: 7vh;
-    position: relative;
-    right: 35%;
-    top: 50%;
-    transition:
-      top 275ms ease-in-out;
+    height: 6vh;
+    width: 6vh;
+    right: 38%;
+    top: 56%;
   }
 
   .app-name {
-    font-size: 2rem;
+    font-size: 1.25rem;
     position: relative;
     top: 0;
   }
 
   .app-preview {
     height: 40%;
-    top: 10%;
+    top: -4%;
+    right: 0;
   }
 
   .desc-right {
-    position: relative;
     left: 0;
     bottom: 27%;
   }
 
   .app-description {
-    width: 20vh;
+    width: 25vh;
+    font-size: 0.7rem;
   }
 
   .move-desc-opened {
-    bottom: 29%;
-    left: 26%;
-    width: 30vh;
-    font-size: 1.25rem;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 38vh;
+    font-size: 0.9rem;
+  }
+
+  .app-links {
+    margin-left: 0;
   }
 
   .app-link {
+    padding: 4px;
     font-size: 0.8rem;
   }
 
@@ -972,8 +990,12 @@ body {
     height: 100%;
   }
 
+  .move-name-opened {
+    top: -10%;
+  }
+
   .move-logo-opened {
-    top: 5%;
+    top: 0;
   }
 
   .squished {
@@ -981,7 +1003,7 @@ body {
   }
 
   .move-logo-down {
-    top: 90%;
+    top: 98%;
   }
 }
 
