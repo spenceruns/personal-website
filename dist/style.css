@@ -881,6 +881,10 @@ body {
 
 /* Small devices (Mobile devices, 576px and up) */
 @media (max-width: 576px) {
+  .welcome-message {
+    flex-flow: column;
+  }
+
   .welcome-tag {
     display: none;
   }
@@ -987,6 +991,16 @@ body {
 
   .move-logo-down {
     top: 98%;
+  }
+}
+
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait)  {
+  .skills-icon {
+    font-size: 5rem;
   }
 }
 
