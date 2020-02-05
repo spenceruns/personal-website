@@ -54,7 +54,6 @@ body {
 .welcome-page-options {
   margin: 0;
   padding: 0;
-  list-style: none;
   height: 23vh;
 }
 
@@ -364,7 +363,7 @@ body {
 .app-preview {
   height: 45%;
   position: relative;
-  top: 25%;
+  top: 31%;
   right: 20%;
   transition:
     opacity 275ms ease-in-out;
@@ -435,7 +434,7 @@ body {
 }
 
 .move-desc-opened {
-  bottom: 23%;
+  bottom: 17%;
   left: 26%;
   width: 38vh;
   font-size: 1.75rem;
@@ -565,8 +564,12 @@ body {
     font-size: 0.45rem;
   }
 
+  .about-me-left {
+    width: 70%;
+  }
+
   .about-me-message {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .skills-page-icons-container,
@@ -856,8 +859,22 @@ body {
 /* Small devices (Mobile devices, 576px and up) */
 @media (max-width: 576px) {
   .welcome-page-container {
-    font-size: 1rem;
+    font-size: 17px;
+  }
+
+  .welcome-message {
     flex-flow: column;
+  }
+
+  .welcome-tag {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .welcome-page-options {
+    margin: 0;
+    padding: 0;
+    height: 27vh;
   }
 
   .welcome-page-option {
