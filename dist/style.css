@@ -211,11 +211,11 @@ body {
 }
 
 .about-me-left {
-  width: 50%;
+  width: 65%;
 }
 
 .about-me-message {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 2% 0;
 }
 
@@ -492,10 +492,6 @@ body {
     font-size: 0.5rem;
   }
 
-  .about-me-message {
-    font-size: 0.75rem;
-  }
-
   .tool-icon {
     font-size: 4rem;
   }
@@ -568,10 +564,6 @@ body {
     width: 70%;
   }
 
-  .about-me-message {
-    font-size: 1rem;
-  }
-
   .skills-page-icons-container,
   .tools-page-icons-container {
     width: 75%;
@@ -629,16 +621,16 @@ body {
   }
 
   .welcome-page-option {
-    width: 130px;
+    width: 150px;
   }
 
   .options-show,
   .selected {
-    width: 130px;
+    width: 150px;
   }
 
   .selected::after {
-    width: 130px;
+    width: 150px;
   }
 
   .about-me-icon {
