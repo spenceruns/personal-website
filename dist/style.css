@@ -949,19 +949,11 @@ body {
 
   .app-name {
     font-size: 1.25rem;
-    position: relative;
-    top: 0;
   }
 
   .app-preview {
-    height: 40%;
     top: -4%;
     right: 0;
-  }
-
-  .desc-right {
-    left: 0;
-    bottom: 27%;
   }
 
   .app-description {
@@ -983,11 +975,6 @@ body {
 
   .app-link {
     padding: 4px;
-    font-size: 0.8rem;
-  }
-
-  .opened {
-    height: 100%;
   }
 
   .move-name-opened {
@@ -996,10 +983,6 @@ body {
 
   .move-logo-opened {
     top: 0;
-  }
-
-  .squished {
-    height: 25%;
   }
 
   .move-logo-down {
