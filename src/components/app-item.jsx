@@ -31,7 +31,7 @@ export default function AppItem(props) {
           <p className={`app-description ${moveDesc}`}>{props.app.description}</p>
           <div className={`app-links ${links}`}>
             <a href={props.app.url} className="app-link" target="_blank">Live</a>
-            <a href={props.app.github} className="app-link" target="_blank">Github</a>
+            <a href={props.app.github} className="app-link" target="_blank">GitHub</a>
             <a href={props.app.figma} className={`app-link ${figma}`} target="_blank">Figma</a>
           </div>
         </div>

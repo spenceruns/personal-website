@@ -19,9 +19,9 @@ export default class AboutMePage extends React.Component {
         <h1 className="about-me-title"><span className="tags">{"<"}</span>h1<span className="tags">{">"}</span>About Me<span className="tags">{"</"}</span>h1<span className="tags">{">"}</span></h1>
         <div className="about-me-content">
           <div className="about-me-left">
-            <p className="about-me-message"><span className="tags">{"<"}</span>p<span className="tags">{">"}</span>As you probably saw above, my name is Spencer, thanks for checking out my portfolio! I’m a software engineer based in Orange County, CA who has a knack for programing websites and solving problems.</p>
+            <p className="about-me-message"><span className="tags">{"<"}</span>p<span className="tags">{">"}</span>As you probably saw above, my name is Spencer, thanks for checking out my portfolio! I’m a software engineer based in Orange County, California who has a knack for programing websites and solving problems.</p>
             <p className="about-me-message">After no longer feeling challenged as a Genius at Apple, I discovered coding and naturally fell in love, with its continuous learning and deep problem solving.</p>
-            <p className="about-me-message">I am versed in languages such as JavaScript (ES5/ES6+), React, Node.js, HTML5, CSS3 and more shown below. I have worked in teams of 2-4, utilizing version control systems (Git/GitHub), planning resources (Figma/Meister Task) and great communication to implement and deploy a variety of projects. I have designed and programmed solo projects as well using a diverse selection on both front and back end languages. I am constantly learning new things and using my brain is different ways and I really have to thank coding.<span className="tags">{"</"}</span>p<span className="tags">{">"}</span></p>
+            <p className="about-me-message">I am versed in languages such as JavaScript (ES5/ES6+), React, Node.js, HTML5, CSS3 and more shown below. I have worked in teams of 2-4, utilizing version control systems (Git/GitHub), planning resources (Figma/Meister Task) and great communication to implement and deploy a variety of projects. I have designed and programmed solo projects as well using a diverse selection on both front and back end languages. I am constantly learning new things and using my brain in different ways and I really have to thank coding.<span className="tags">{"</"}</span>p<span className="tags">{">"}</span></p>
             <strong className="about-me-message"><span className="tags">{"<"}</span>strong<span className="tags">{">"}</span>I love coding!<span className="tags">{"</"}</span>strong<span className="tags">{">"}</span></strong>
           </div>
           <div className="about-me-right">
@@ -29,7 +29,7 @@ export default class AboutMePage extends React.Component {
             <div className="about-me-icon-container">
               <a href="https://github.com/spenceruns" target="_blank" className="about-me-icon">
                 <i className="fab fa-github"></i>
-                <div className="icon-name">Github</div>
+                <div className="icon-name">GitHub</div>
               </a>
               <a href="https://www.linkedin.com/in/spenceruns/" target="_blank" className="about-me-icon">
                 <i className="fab fa-linkedin"></i>

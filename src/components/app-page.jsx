@@ -9,7 +9,7 @@ export default class AppPage extends React.Component {
       apps: [
         {
           id: 1,
-          name: "Memory Match",
+          name: "lo-fi Memory Match",
           description: "A lo-fi hip-hop music-themed memory match game that dynamically creates a song as you play.",
           logo: "./images/mm-logo.png",
           preview: "./images/mm-preview.gif",
