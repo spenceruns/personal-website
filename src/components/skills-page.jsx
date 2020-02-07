@@ -22,7 +22,7 @@ export default function SkillsPage(props) {
     data-aos-anchor=".about-me-page-container"
     data-aos-anchor-placement="center-center"
     data-aos-duration="50">
-      <h1 className="skills-title"><span className="tags">{"<"}</span>h1<span className="tags">{">"}</span>Skills<span className="tags">{"</"}</span>h1<span className="tags">{">"}</span></h1>
+      <h1 className="skills-title">Skills</h1>
       <div className="skills-page-icons-container">
         {skills.map(skill =>
           <SkillItem key={skill} skill={skill} />)}

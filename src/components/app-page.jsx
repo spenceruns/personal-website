@@ -62,7 +62,7 @@ export default class AppPage extends React.Component {
         data-aos-anchor=".tools-page-container"
         data-aos-anchor-placement="center-center"
         data-aos-duration="50">
-        <h1 className="apps-title"><span className="tags">{"<"}</span>h1<span className="tags">{">"}</span>Applications<span className="tags">{"</"}</span>h1<span className="tags">{">"}</span></h1>
+        <h1 className="apps-title">Applications</h1>
         <div className="apps-container">
           {this.state.apps.map(app =>
             <AppItem key={app.id}

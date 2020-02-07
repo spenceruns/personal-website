@@ -22,7 +22,7 @@ export default function ToolsPage(props) {
   ]
   return (
     <div className="tools-page-container" id="tools">
-      <h1 className="tools-title"><span className="tags">{"<"}</span>h1<span className="tags">{">"}</span>Tools<span className="tags">{"</"}</span>h1<span className="tags">{">"}</span></h1>
+      <h1 className="tools-title">Tools</h1>
       <div className="tools-page-icons-container">
         {tools.map(tool =>
           <ToolItem key={tool} tool={tool} />)}

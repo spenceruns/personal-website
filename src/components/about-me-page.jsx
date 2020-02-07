@@ -16,13 +16,13 @@ export default class AboutMePage extends React.Component {
   render() {
     return (
       <div className="about-me-page-container" id="about-me">
-        <h1 className="about-me-title"><span className="tags">{"<"}</span>h1<span className="tags">{">"}</span>About Me<span className="tags">{"</"}</span>h1<span className="tags">{">"}</span></h1>
+        <h1 className="about-me-title">About Me</h1>
         <div className="about-me-content">
           <div className="about-me-left">
-            <p className="about-me-message"><span className="tags">{"<"}</span>p<span className="tags">{">"}</span>As you probably saw above, my name is Spencer, thanks for checking out my portfolio! I’m a software engineer based in Orange County, California who has a knack for programing websites and solving problems.</p>
+            <p className="about-me-message">As you probably saw above, my name is Spencer, thanks for checking out my portfolio! I’m a software engineer based in Orange County, California who has a knack for programing websites and solving problems.</p>
             <p className="about-me-message">After no longer feeling challenged as a Genius at Apple, I discovered coding and naturally fell in love, with its continuous learning and deep problem solving.</p>
-            <p className="about-me-message">I am versed in languages such as JavaScript (ES5/ES6+), React, Node.js, HTML5, CSS3 and more shown below. I have worked in teams of 2-4, utilizing version control systems (Git/GitHub), planning resources (Figma/Meister Task) and great communication to implement and deploy a variety of projects. I have designed and programmed solo projects as well using a diverse selection on both front and back end languages. I am constantly learning new things and using my brain in different ways and I really have to thank coding.<span className="tags">{"</"}</span>p<span className="tags">{">"}</span></p>
-            <strong className="about-me-message"><span className="tags">{"<"}</span>strong<span className="tags">{">"}</span>I love coding!<span className="tags">{"</"}</span>strong<span className="tags">{">"}</span></strong>
+            <p className="about-me-message">I am versed in languages such as JavaScript (ES5/ES6+), React, Node.js, HTML5, CSS3 and more shown below. I have worked in teams of 2-4, utilizing version control systems (Git/GitHub), planning resources (Figma/Meister Task) and great communication to implement and deploy a variety of projects. I have designed and programmed solo projects as well using a diverse selection on both front and back end languages. I am constantly learning new things and using my brain in different ways and I really have to thank coding.</p>
+            <strong className="about-me-message">I love coding!</strong>
           </div>
           <div className="about-me-right">
             <img src="./images/profile-pic.jpeg" alt="" className="about-me-image" />
@@ -50,3 +50,6 @@ export default class AboutMePage extends React.Component {
     )
   }
 }
+
+
+{/* <span className="tags">{"<"}</span>h1 < span className = "tags" > { ">"}</span > */}

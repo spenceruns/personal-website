@@ -45,7 +45,7 @@ export default class WelcomePage extends React.Component {
     const showing = this.state.showList && "options-show"
     return (
       <div className="welcome-page-container">
-        <div className="welcome-message"><div className="welcome-tag"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span></div>Hi,  My name is Spencer! Check out out my&nbsp;
+        <div className="welcome-message"><div className="welcome-tag"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span></div>Hi,  My name is Spencer! Check out my&nbsp;
           <ul className="welcome-page-options">
             { this.whichView() }
           </ul>
