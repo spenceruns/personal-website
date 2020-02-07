@@ -82,7 +82,7 @@ function NoOption(props) {
       <Link to="tools"
         spy={true}
         smooth={true}
-        duration={1500}
+        duration={1000}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
@@ -91,7 +91,7 @@ function NoOption(props) {
       <Link to="applications"
         spy={true}
         smooth={true}
-        duration={2000}
+        duration={1000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
@@ -123,7 +123,7 @@ function AboutMeOption(props) {
       <Link to="tools"
         spy={true}
         smooth={true}
-        duration={1500}
+        duration={1000}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
@@ -132,7 +132,7 @@ function AboutMeOption(props) {
       <Link to="applications"
         spy={true}
         smooth={true}
-        duration={2000}
+        duration={1000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
@@ -164,7 +164,7 @@ function SkillsOption(props) {
       <Link to="tools"
         spy={true}
         smooth={true}
-        duration={1500}
+        duration={1000}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
@@ -173,7 +173,7 @@ function SkillsOption(props) {
       <Link to="applications"
         spy={true}
         smooth={true}
-        duration={2000}
+        duration={1000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
@@ -200,7 +200,7 @@ function ToolsOption(props) {
       <Link to="skills"
         spy={true}
         smooth={true}
-        duration={1500}
+        duration={1000}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
@@ -209,7 +209,7 @@ function ToolsOption(props) {
       <Link to="applications"
         spy={true}
         smooth={true}
-        duration={2000}
+        duration={1000}
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
@@ -236,7 +236,7 @@ function ApplicationsOption(props) {
       <Link to="skills"
         spy={true}
         smooth={true}
-        duration={1500}
+        duration={1000}
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
@@ -245,7 +245,7 @@ function ApplicationsOption(props) {
       <Link to="tools"
         spy={true}
         smooth={true}
-        duration={2000}
+        duration={1000}
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
