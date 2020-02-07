@@ -61,42 +61,26 @@ function NoOption(props) {
   return (
     <>
       <li className={`welcome-page-option ${showing} selected`} onClick={props.toggleList} style={{ color: '#393e46'}}>Awesome Stuff!</li>
-      <Link to="about-me"
-      spy={true}
-      smooth={true}
-      duration={1000}
-      id="About Me"
-      className={`welcome-page-option about-me ${showing}`}
-      onClick={props.toggleList}>
-        About Me
-        </Link>
-      <Link to="skills"
-        spy={true}
-        smooth={true}
-        duration={1000}
+      <a href="#about-me"
+        id="About Me"
+        className={`welcome-page-option about-me ${showing}`}
+        onClick={props.toggleList}>
+        About Me</a>
+      <a href="#skills"
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
-          Skills
-          </Link>
-      <Link to="tools"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Skills</a>
+      <a href="#tools"
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
-        Tools
-          </Link>
-      <Link to="applications"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Tools</a>
+      <a href="#applications"
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
-        Applications
-          </Link>
+        Applications</a>
     </>
   )
 }
@@ -111,33 +95,21 @@ function AboutMeOption(props) {
         onClick={props.toggleList}>
         About Me
         </li>
-      <Link to="skills"
-        spy={true}
-        smooth={true}
-        duration={1000}
+      <a href="#skills"
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
-        Skills
-          </Link>
-      <Link to="tools"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Skills</a>
+      <a href="#tools"
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
-        Tools
-          </Link>
-      <Link to="applications"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Tools</a>
+      <a href="#applications"
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
-        Applications
-          </Link>
+        Applications</a>
     </>
   )
 }
@@ -152,33 +124,21 @@ function SkillsOption(props) {
         onClick={props.toggleList}>
         Skills
         </li>
-      <Link to="about-me"
-        spy={true}
-        smooth={true}
-        duration={1000}
+      <a href="#about-me"
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
-        About Me
-        </Link>
-      <Link to="tools"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        About Me</a>
+      <a href="#tools"
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
-        Tools
-          </Link>
-      <Link to="applications"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Tools</a>
+      <a href="#applications"
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
-        Applications
-          </Link>
+        Applications</a>
     </>
   )
 }
@@ -188,33 +148,21 @@ function ToolsOption(props) {
   return (
     <>
       <li id="Tools" className={`welcome-page-option tools ${showing} selected`} onClick={props.toggleList}>Tools</li>
-      <Link to="about-me"
-        spy={true}
-        smooth={true}
-        duration={1000}
+      <a href="#about-me"
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
-        About Me
-        </Link>
-      <Link to="skills"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        About Me</a>
+      <a href="#skills"
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
-        Skills
-          </Link>
-      <Link to="applications"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Skills</a>
+      <a href="#applications"
         id="Applications"
         className={`welcome-page-option applications ${showing}`}
         onClick={props.toggleList}>
-        Applications
-          </Link>
+        Applications</a>
     </>
   )
 }
@@ -224,33 +172,21 @@ function ApplicationsOption(props) {
   return (
     <>
       <li id="Applications" className={`welcome-page-option applications ${showing} selected`} onClick={props.toggleList}>Applications</li>
-      <Link to="about-me"
-        spy={true}
-        smooth={true}
-        duration={1000}
+      <a href="#about-me"
         id="About Me"
         className={`welcome-page-option about-me ${showing}`}
         onClick={props.toggleList}>
-        About Me
-        </Link>
-      <Link to="skills"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        About Me</a>
+      <a href="#skills"
         id="Skills"
         className={`welcome-page-option skills ${showing}`}
         onClick={props.toggleList}>
-        Skills
-          </Link>
-      <Link to="tools"
-        spy={true}
-        smooth={true}
-        duration={1000}
+        Skills</a>
+      <a href="#tools"
         id="Tools"
         className={`welcome-page-option tools ${showing}`}
         onClick={props.toggleList}>
-        Tools
-          </Link>
+        Tools</a>
     </>
   )
 }
