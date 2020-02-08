@@ -11,6 +11,7 @@
 body {
   font-family: 'Merriweather', serif;
   width: 100vw;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   background-color: #222831;
@@ -415,7 +416,7 @@ body {
   background-color: #12d3cf;
   border-radius: 10px;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .app-link:hover {
