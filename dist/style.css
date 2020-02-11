@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Merriweather', serif;
   width: 100vw;
