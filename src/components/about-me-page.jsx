@@ -19,9 +19,10 @@ export default class AboutMePage extends React.Component {
         <h1 className="about-me-title">About Me</h1>
         <div className="about-me-content">
           <div className="about-me-left">
-            <p className="about-me-message">As you probably saw above, my name is Spencer, thanks for checking out my portfolio! I’m a software engineer based in Orange County, California who has a knack for programing websites and solving problems.</p>
-            <p className="about-me-message">After no longer feeling challenged as a Genius at Apple, I discovered coding and naturally fell in love, with its continuous learning and deep problem solving.</p>
-            <p className="about-me-message">I am versed in languages such as JavaScript (ES5/ES6+), React, Node.js, HTML5, CSS3 and more shown below. I have worked in teams of 2-4, utilizing version control systems (Git/GitHub), planning resources (Figma/Meister Task) and great communication to implement and deploy a variety of projects. I have designed and programmed solo projects as well using a diverse selection on both front and back end languages. I am constantly learning new things and using my brain in different ways and I really have to thank coding.</p>
+            <p className="about-me-message">Thanks for checking out my portfolio! My name is Spencer and I’m a software engineer based in Orange County, California. I have a knack for creating solutions utilizing technical tools and soft skills.</p>
+            <p className="about-me-message">After a fulfilling tenure as a Genius at Apple, I discovered coding and fell in love with it because of its continuous learning and deep problem-solving culture. I decided to attend an accelerated web development program to kick-start my new found passion.</p>
+            <p className="about-me-message">Having completed this program I am now versed in scripting languages such as JavaScript (ES5/ES6+), React, Node.js, HTML5, CSS3 and more as shown below. I have worked in small teams, utilizing version control systems (Git/GitHub) and planning resources (Figma/Meister Task) along with great communication to implement and deploy a variety of web projects. I have designed and programmed projects using a diverse selection of both frontend and backend languages. Because of my love of coding I am constantly learning new things and using my brain in challenging ways.</p>
+            <p className="about-me-message">I’m excited to advance my skills and experiences by exploring new opportunities.</p>
             <strong className="about-me-message">I love coding!</strong>
           </div>
           <div className="about-me-right">
@@ -50,6 +51,3 @@ export default class AboutMePage extends React.Component {
     )
   }
 }
-
-
-{/* <span className="tags">{"<"}</span>h1 < span className = "tags" > { ">"}</span > */}
