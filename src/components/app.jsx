@@ -5,7 +5,7 @@ import SkillsPage from './skills-page'
 import ToolsPage from './tools-page'
 import AppPage from './app-page'
 
-export default function App(props) {
+const App = props => {
   return (
     <>
       <WelcomePage />
@@ -19,3 +19,5 @@ export default function App(props) {
     </>
   )
 }
+
+export default App

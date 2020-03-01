@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ToolItem(props) {
+ const ToolItem = props => {
   let icon = null
   switch(props.tool) {
     case "AWS":
@@ -43,3 +43,5 @@ export default function ToolItem(props) {
     </div>
   )
 }
+
+export default ToolItem

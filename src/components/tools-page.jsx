@@ -1,7 +1,7 @@
 import React from 'react'
 import ToolItem from './tool-item';
 
-export default function ToolsPage(props) {
+const ToolsPage = props => {
   const tools = [
     "AWS",
     "Babel",
@@ -30,3 +30,5 @@ export default function ToolsPage(props) {
     </div>
   )
 }
+
+export default ToolsPage

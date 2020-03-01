@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from 'aos';
 import SkillItem from './skill-item';
 
-export default function SkillsPage(props) {
+const SkillsPage = props => {
   AOS.init();
   const skills = [
     "JavaScript",
@@ -30,3 +30,5 @@ export default function SkillsPage(props) {
     </div>
   )
 }
+
+export default SkillsPage
