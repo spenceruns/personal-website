@@ -1,55 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export default class WelcomePage extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      showList: false,
-      whichOption: ''
-    }
-    this.toggleList = this.toggleList.bind(this)
-    this.changeOption = this.changeOption.bind(this)
-    this.whichView = this.whichView.bind(this)
+export default function WelcomePage(props) {
+  const [listView, setListView] = useState(false)
+  const [viewOption, setViewOption] = useState(null)
+  const showing = listView ? "options-show" : ""
+  let view = null
+  switch (viewOption) {
+    case "About Me":
+      view = <AboutMeOption showList={listView} toggleList={() => {
+        setListView(!listView)
+        setViewOption(event.target.id)
+      }} />
+      break
+    case "Skills":
+      view = <SkillsOption showList={listView} toggleList={() => {
+        setListView(!listView)
+        setViewOption(event.target.id)
+      }} />
+      break
+    case "Tools":
+      view = <ToolsOption showList={listView} toggleList={() => {
+        setListView(!listView)
+        setViewOption(event.target.id)
+      }} />
+      break
+    case "Applications":
+      view = <ApplicationsOption showList={listView} toggleList={() => {
+        setListView(!listView)
+        setViewOption(event.target.id)
+      }} />
+      break
+    default:
+      view = <NoOption showList={listView} toggleList={() => {
+        setListView(!listView)
+        setViewOption(event.target.id)
+      }} />
   }
-
-  toggleList() {
-    this.setState({showList: !this.state.showList}, () => this.changeOption())
-  }
-
-  changeOption() {
-    if (!this.state.showList) {
-      this.setState({ whichOption: event.target.id })
-    }
-  }
-
-  whichView() {
-    switch(this.state.whichOption) {
-      case "":
-        return <NoOption showList={this.state.showList} toggleList={this.toggleList} />
-      case "About Me":
-        return <AboutMeOption showList={this.state.showList} toggleList={this.toggleList} />
-      case "Skills":
-        return <SkillsOption showList={this.state.showList} toggleList={this.toggleList} />
-      case "Tools":
-        return <ToolsOption showList={this.state.showList} toggleList={this.toggleList} />
-      case "Applications":
-        return <ApplicationsOption showList={this.state.showList} toggleList={this.toggleList} />
-    }
-  }
-
-  render() {
-    const showing = this.state.showList && "options-show"
-    return (
-      <div className="welcome-page-container">
-        <div className="welcome-message"><div className="welcome-tag"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span></div>Hi,  My name is Spencer! Check out my&nbsp;
+  return (
+    <div className="welcome-page-container">
+      <div className="welcome-message"><div className="welcome-tag"><span className="tags">{"<"}</span>div<span className="tags">{">"}</span></div>Hi,  My name is Spencer! Check out my&nbsp;
           <ul className="welcome-page-options">
-            { this.whichView() }
-          </ul>
-          <div className="welcome-tag"><span className="tags">{"</"}</span>div<span className="tags">{">"}</span></div>
-        </div>
-     </div>
-   )
-  }
+          { view }
+        </ul>
+        <div className="welcome-tag"><span className="tags">{"</"}</span>div<span className="tags">{">"}</span></div>
+      </div>
+    </div>
+  )
 }
 
 function NoOption(props) {
