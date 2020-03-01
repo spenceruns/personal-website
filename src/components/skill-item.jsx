@@ -1,41 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export default class SkillItem extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isClicked: false
-    }
-    this.addSpin = this.addSpin.bind(this)
+const SkillItem = props => {
+  const [clicked, setClicked] = useState(false)
+  const spin = clicked ? "spin" : ""
+  let icon = null
+  switch (props.skill) {
+    case "React":
+      icon = "devicon-react-original";
+      break;
+    case "Express":
+      icon = "devicon-express-original-wordmark";
+      break;
+    case "Node.js":
+      icon = "devicon-nodejs-plain"
+      break;
+    default:
+      icon = `devicons devicons-${props.skill.toLowerCase()}`
   }
-
-  addSpin() {
-    this.setState({ isClicked: true },
-      () => setTimeout(() => this.setState({ isClicked: false }), 750))
-  }
-
-  render() {
-    const spin = this.state.isClicked && "spin"
-    let icon = null
-    switch(this.props.skill) {
-      case "React":
-        icon = "devicon-react-original";
-        break;
-      case "Express":
-        icon = "devicon-express-original-wordmark";
-        break;
-      case "Node.js":
-        icon = "devicon-nodejs-plain"
-        break;
-      default:
-        icon =`devicons devicons-${this.props.skill.toLowerCase()}`
-    }
-    return (
-      <div className="skills-icon-container"
-        onClick={this.addSpin}>
-        <i className={`${icon} skills-icon ${spin}`}></i>
-        <div className="skills-name">{this.props.skill}</div>
-      </div>
-    )
-  }
+  return (
+    <div className="skills-icon-container"
+      onClick={() => {
+        setClicked(true)
+        setTimeout(() => setClicked(false), 750)
+      }}>
+      <i className={`${icon} skills-icon ${spin}`}></i>
+      <div className="skills-name">{props.skill}</div>
+    </div>
+  )
 }
+
+export default SkillItem
