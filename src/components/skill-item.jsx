@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const SkillItem = props => {
+export default function SkillItem(props) {
   const [clicked, setClicked] = useState(false)
   const spin = clicked ? "spin" : ""
   let icon = null
@@ -28,5 +28,3 @@ const SkillItem = props => {
     </div>
   )
 }
-
-export default SkillItem

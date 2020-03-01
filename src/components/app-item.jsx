@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AppItem = props => {
+export default function AppItem(props) {
   let openState = null
   let moveLogo = null
   let moveName = null
@@ -38,5 +38,3 @@ const AppItem = props => {
     </div>
   )
 }
-
-export default AppItem
