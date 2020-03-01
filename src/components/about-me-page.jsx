@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AboutMePage = props => {
+export default function AboutMePage(props) {
   return (
     <div className="about-me-page-container" id="about-me">
       <h1 className="about-me-title">About Me</h1>
@@ -37,5 +37,3 @@ const AboutMePage = props => {
     </div>
   )
 }
-
-export default AboutMePage
