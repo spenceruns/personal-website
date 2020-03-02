@@ -272,10 +272,7 @@ body {
   width: 13vh;
   height: 13vh;
   margin: 0 75px;
-  border-radius: 10px;
-  background-color: #222831;
   color: #12d3cf;
-  border: 2px solid #12d3cf;
 }
 
 .skills-icon {
@@ -303,6 +300,7 @@ body {
 .tool-name {
   text-align: center;
   font-size: 0.9rem;
+  color: #EEEEEE;
 }
 
 .skills-icon-container:hover .skills-icon {
